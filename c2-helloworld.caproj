@@ -11,6 +11,7 @@
     <saved-with-version>23900</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
     <used-behaviors />
     <used-effects />
@@ -42,6 +43,9 @@
     <object-folder>
         <object-type name="Mouse" sid="621445112411928">
             <plugin id="Mouse" />
+        </object-type>
+        <object-type name="txt_text" sid="924034242141093">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
