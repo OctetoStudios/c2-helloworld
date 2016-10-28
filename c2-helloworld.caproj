@@ -12,6 +12,7 @@
     <used-plugins>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
     <used-behaviors />
     <used-effects />
@@ -62,6 +63,8 @@
                     </frame>
                 </animation>
             </animation-folder>
+        <object-type name="txt_text" sid="924034242141093">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
