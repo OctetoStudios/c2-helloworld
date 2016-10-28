@@ -1,2 +1,3 @@
 # Backup files #
 *.backup1
+*.uistate.xml
