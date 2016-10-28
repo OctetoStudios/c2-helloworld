@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>preload_ev</name>
+    <events>
+        <event-block sid="216029290123802">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="463444652233948" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="296590405765865" type="System">
+                    <param id="0" name="Seconds">5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="239203616648599" type="System">
+                    <param id="0" name="Layout">main</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
