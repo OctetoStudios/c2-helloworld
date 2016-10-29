@@ -11,6 +11,8 @@
     <saved-with-version>23900</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
     <used-behaviors />
     <used-effects />
@@ -21,7 +23,7 @@
         <width>640</width>
         <height>480</height>
     </window-size>
-    <pixel-rounding>1</pixel-rounding>
+    <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
@@ -35,7 +37,7 @@
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
-        <prop name="Preview browser">Chrome</prop>
+        <prop name="Preview browser">(default)</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -43,15 +45,39 @@
         <object-type name="Mouse" sid="621445112411928">
             <plugin id="Mouse" />
         </object-type>
+        <object-type name="Sprite" sid="346417692715046">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="144456544838572" speed="5">
+                    <frame duration="1" hotspotX="0.492188" hotspotY="0.335938" original-source="C:\Users\Julio\Dropbox\Octeto\04_diseño_imagen_corporativa\logo\logo_os\icons_png\icon-256.png">
+                        <collision-poly>
+                            <point x="0.203125" y="0.203125" />
+                            <point x="0.5" y="0.0078125" />
+                            <point x="0.777344" y="0.222656" />
+                            <point x="0.769531" y="0.5" />
+                            <point x="0.835938" y="0.835938" />
+                            <point x="0.5" y="0.988281" />
+                            <point x="0.140625" y="0.859375" />
+                            <point x="0.203125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        <object-type name="txt_text" sid="924034242141093">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>main.xml</layout>
         <layout>game.xml</layout>
+        <layout>preload.xml</layout>
+        <layout>assets.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>main_ev.xml</event-sheet>
         <event-sheet>game_ev.xml</event-sheet>
+        <event-sheet>preload_ev.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="0" />
