@@ -1,6 +1,7 @@
 # Construct 2 files #
-*.backup1
 *.uistate.xml
+*.capx.backup
+*.capx.backup1
 
 # Compiled source #
 *.com

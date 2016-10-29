@@ -81,7 +81,7 @@
         <event-sheet>preload_ev.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Mouse" uid="0" />
+        <global-instance type="Mouse" uid="3" />
     </global-instances>
     <sounds-folder />
     <music-folder />
