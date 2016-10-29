@@ -63,6 +63,7 @@
                     </frame>
                 </animation>
             </animation-folder>
+		</object-type>
         <object-type name="txt_text" sid="924034242141093">
             <plugin id="Text" />
         </object-type>
