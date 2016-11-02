@@ -74,6 +74,12 @@
                 <action id="5" name="Set frame" sid="829320428066769" type="btn_action">
                     <param id="0" name="Frame number">2</param>
                 </action>
+                <action id="0" name="Play" sid="917159142583751" type="Audio">
+                    <param id="0" name="Audio file">Navigation_Open_02</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                </action>
             </actions>
         </event-block>
     </events>
