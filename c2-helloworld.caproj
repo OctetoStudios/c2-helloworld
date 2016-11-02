@@ -15,7 +15,9 @@
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
-    <used-behaviors />
+    <used-behaviors>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -67,6 +69,11 @@
         </object-type>
         <object-type name="txt_text" sid="924034242141093">
             <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Sine" sid="227088385932490">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
         </object-type>
         <object-type name="Audio" sid="958020802914888">
             <plugin id="Audio" />
