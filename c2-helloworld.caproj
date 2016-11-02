@@ -89,6 +89,22 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="bg_01" sid="314790595275883">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="548916969436327" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Julio\Documents\00_OCTETO_STUDIOS\02_Implementacion\github\assets\bg_01.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bg_02" sid="957514373483941">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="984263925432252" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Julio\Documents\00_OCTETO_STUDIOS\02_Implementacion\github\assets\bg_02.jpeg" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
