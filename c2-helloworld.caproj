@@ -2,7 +2,7 @@
 <c2project>
     <name>c2-helloworld</name>
     <description>First Github project</description>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <author>ggaete</author>
     <author-email>ggaete@octetostudios.com</author-email>
     <author-website>http://www.octetostudios.com</author-website>
@@ -10,9 +10,14 @@
     <unique-id>3cjoxoqy406ny</unique-id>
     <saved-with-version>23900</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
-    <used-behaviors />
+    <used-behaviors>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -35,7 +40,7 @@
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
-        <prop name="Preview browser">Chrome</prop>
+        <prop name="Preview browser">(default)</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -43,20 +48,97 @@
         <object-type name="Mouse" sid="621445112411928">
             <plugin id="Mouse" />
         </object-type>
+        <object-type name="Sprite" sid="346417692715046">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="144456544838572" speed="5">
+                    <frame duration="1" hotspotX="0.492188" hotspotY="0.335938" original-source="C:\Users\Julio\Dropbox\Octeto\04_diseño_imagen_corporativa\logo\logo_os\icons_png\icon-256.png">
+                        <collision-poly>
+                            <point x="0.203125" y="0.203125" />
+                            <point x="0.5" y="0.0078125" />
+                            <point x="0.777344" y="0.222656" />
+                            <point x="0.769531" y="0.5" />
+                            <point x="0.835938" y="0.835938" />
+                            <point x="0.5" y="0.988281" />
+                            <point x="0.140625" y="0.859375" />
+                            <point x="0.203125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="txt_text" sid="924034242141093">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Sine" sid="227088385932490">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Audio" sid="958020802914888">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="btn_action" sid="840077205480457">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="819869180974100" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Julio\Dropbox\Octeto\04_diseño_imagen_corporativa\logo\logo_os\logo_transparente_100x100.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bg_01" sid="314790595275883">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="548916969436327" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Julio\Documents\00_OCTETO_STUDIOS\02_Implementacion\github\assets\bg_01.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bg_02" sid="957514373483941">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="984263925432252" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Julio\Documents\00_OCTETO_STUDIOS\02_Implementacion\github\assets\bg_02.jpeg" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>main.xml</layout>
         <layout>game.xml</layout>
+        <layout>preload.xml</layout>
+        <layout>assets.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>main_ev.xml</event-sheet>
         <event-sheet>game_ev.xml</event-sheet>
+        <event-sheet>preload_ev.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Mouse" uid="0" />
+        <global-instance type="Mouse" uid="3" />
+        <global-instance type="Audio" uid="4">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
-    <sounds-folder />
+    <sounds-folder>
+        <file name="Navigation_Open_02.m4a" />
+        <file name="Navigation_Open_02.ogg" />
+    </sounds-folder>
     <music-folder />
     <files-folder>
         <file-folder name="Icons">
