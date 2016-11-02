@@ -10,6 +10,7 @@
     <unique-id>3cjoxoqy406ny</unique-id>
     <saved-with-version>23900</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
@@ -67,6 +68,17 @@
         <object-type name="txt_text" sid="924034242141093">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Audio" sid="958020802914888">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="btn_action" sid="840077205480457">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="819869180974100" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Julio\Dropbox\Octeto\04_diseño_imagen_corporativa\logo\logo_os\logo_transparente_100x100.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -82,8 +94,25 @@
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="3" />
+        <global-instance type="Audio" uid="4">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
-    <sounds-folder />
+    <sounds-folder>
+        <file name="Navigation_Open_02.m4a" />
+        <file name="Navigation_Open_02.ogg" />
+    </sounds-folder>
     <music-folder />
     <files-folder>
         <file-folder name="Icons">
