@@ -3,6 +3,36 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>main_ev</name>
     <events>
+        <event-block sid="906685168402797">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="165012827704102" type="Mouse">
+                    <param id="0" name="Object">btn_action</param>
+                </condition>
+                <condition id="3" inverted="1" name="Compare frame" sid="550835670142014" type="btn_action">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="570689936405705" type="btn_action">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="858693701907080">
+            <conditions>
+                <condition id="-22" name="Else" sid="128022853622030" type="System" />
+                <condition id="3" inverted="1" name="Compare frame" sid="423766409928342" type="btn_action">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="652224322431595" type="btn_action">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="562259267564646">
             <conditions>
                 <condition id="3" name="On button released" sid="352084606194953" type="Mouse">
@@ -11,13 +41,38 @@
                 <condition id="7" name="Cursor is over object" sid="883465609609710" type="Mouse">
                     <param id="0" name="Object">btn_action</param>
                 </condition>
+                <condition id="3" inverted="1" name="Compare frame" sid="388473874028514" type="btn_action">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">3</param>
+                </condition>
             </conditions>
             <actions>
+                <action id="5" name="Set frame" sid="345402583411634" type="btn_action">
+                    <param id="0" name="Frame number">3</param>
+                </action>
                 <action id="-16" name="Wait" sid="147813520842095" type="System">
                     <param id="0" name="Seconds">5</param>
                 </action>
                 <action id="-2" name="Go to layout" sid="131571417765086" type="System">
                     <param id="0" name="Layout">game</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="955722962486185">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="310486911879448" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">btn_action</param>
+                </condition>
+                <condition id="3" inverted="1" name="Compare frame" sid="478361631468615" type="btn_action">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="829320428066769" type="btn_action">
+                    <param id="0" name="Frame number">2</param>
                 </action>
             </actions>
         </event-block>
